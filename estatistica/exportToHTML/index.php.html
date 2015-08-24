@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>index.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(248,248,248); }
+.s1 { color: rgb(255,100,0); }
+.s2 { color: rgb(127,144,170); }
+.s3 { color: rgb(248,248,248); font-weight: bold; }
+.s4 { color: rgb(97,206,60); font-weight: bold; }
+.s5 { color: rgb(141,166,206); }
+.s6 { color: rgb(216,250,60); }
+.s7 { color: rgb(104,232,104); font-weight: bold; }
+.s8 { color: rgb(251,222,45); }
+.s9 { color: rgb(97,206,60); }
+</style>
+</head>
+<BODY BGCOLOR="#c1021">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+index.php</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">&lt;!DOCTYPE </span><span class="s1">html</span><span class="s0">&gt; 
+&lt;</span><span class="s2">html</span><span class="s0">&gt; 
+&lt;</span><span class="s2">head</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">title</span><span class="s0">&gt;</span><span class="s3">Estatistica teste</span><span class="s0">&lt;/</span><span class="s2">title</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">meta </span><span class="s1">charset=</span><span class="s4">&quot;UTF-8&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">meta </span><span class="s1">name=</span><span class="s4">&quot;viewport&quot; </span><span class="s1">content=</span><span class="s4">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">link </span><span class="s1">rel=</span><span class="s4">&quot;stylesheet&quot; </span><span class="s1">type=</span><span class="s4">&quot;text/css&quot; </span><span class="s1">href=</span><span class="s4">&quot;bootstrap.min.css&quot; </span><span class="s0">/&gt; 
+ 
+&lt;</span><span class="s2">style</span><span class="s0">&gt; 
+</span><span class="s1">form</span><span class="s0">{ 
+  </span><span class="s5">width</span><span class="s0">: </span><span class="s6">200</span><span class="s7">px</span><span class="s0">; 
+  </span><span class="s5">margin</span><span class="s0">:</span><span class="s7">auto</span><span class="s0">; 
+} 
+&lt;/</span><span class="s2">style</span><span class="s0">&gt; 
+&lt;/</span><span class="s2">head</span><span class="s0">&gt; 
+&lt;</span><span class="s2">body</span><span class="s0">&gt; 
+</span><span class="s8">&lt;?php</span><span class="s0">  
+ 
+ </span><span class="s8">if</span><span class="s0">(</span><span class="s8">isset</span><span class="s0">(</span><span class="s1">$_POST</span><span class="s0">[</span><span class="s9">'consultar'</span><span class="s0">])){ 
+   
+  </span><span class="s1">$populacao </span><span class="s8">= </span><span class="s1">$_POST</span><span class="s0">[</span><span class="s9">'populacao'</span><span class="s0">]; 
+  </span><span class="s1">$fixa1 </span><span class="s8">= </span><span class="s6">0.25</span><span class="s0">; 
+  </span><span class="s1">$confiab </span><span class="s8">= </span><span class="s1">$_POST</span><span class="s0">[</span><span class="s9">'confiabilidade'</span><span class="s0">]; 
+ 
+ 
+    </span><span class="s8">if</span><span class="s0">(</span><span class="s1">$confiab </span><span class="s8">== </span><span class="s6">1</span><span class="s0">){ 
+        </span><span class="s1">$confiab2 </span><span class="s8">= </span><span class="s6">2.57</span><span class="s0">; 
+        </span><span class="s1">$confiab </span><span class="s8">= </span><span class="s6">2.57 </span><span class="s8">* </span><span class="s6">2.57</span><span class="s0">; 
+    } 
+ 
+     </span><span class="s8">elseif </span><span class="s0">(</span><span class="s1">$confiab </span><span class="s8">== </span><span class="s6">2</span><span class="s0">){ 
+         </span><span class="s1">$confiab2 </span><span class="s8">= </span><span class="s6">1.96</span><span class="s0">; 
+        </span><span class="s1">$confiab </span><span class="s8">= </span><span class="s6">1.96 </span><span class="s8">* </span><span class="s6">1.96</span><span class="s0">; 
+    } 
+     </span><span class="s8">elseif</span><span class="s0">(</span><span class="s1">$confiab </span><span class="s8">== </span><span class="s6">3</span><span class="s0">){ 
+         </span><span class="s1">$confiab2</span><span class="s8">= </span><span class="s6">1.64</span><span class="s0">; 
+        </span><span class="s1">$confiab </span><span class="s8">= </span><span class="s6">1.64 </span><span class="s8">* </span><span class="s6">1.64</span><span class="s0">; 
+ 
+    }</span><span class="s8">else </span><span class="s0">{ 
+        </span><span class="s1">$confiab2 </span><span class="s8">= </span><span class="s1">$confiab</span><span class="s0">; 
+        </span><span class="s1">$confiab </span><span class="s8">= </span><span class="s1">$confiab </span><span class="s8">* </span><span class="s1">$confiab</span><span class="s0">; 
+ 
+    } 
+ 
+ 
+ 
+ 
+ 
+     </span><span class="s1">$erro </span><span class="s8">= </span><span class="s1">$_POST</span><span class="s0">[</span><span class="s9">'erro'</span><span class="s0">]; 
+     </span><span class="s1">$erro1 </span><span class="s8">= </span><span class="s1">$erro </span><span class="s8">/</span><span class="s6">100</span><span class="s0">; 
+  </span><span class="s1">$erroResult </span><span class="s8">= </span><span class="s1">$erro1 </span><span class="s8">* </span><span class="s1">$erro1 </span><span class="s0">; 
+  </span><span class="s1">$dividendo </span><span class="s8">= </span><span class="s1">$populacao </span><span class="s8">* </span><span class="s1">$fixa1 </span><span class="s8">* </span><span class="s1">$confiab</span><span class="s0">; 
+  </span><span class="s1">$populacao2 </span><span class="s8">= </span><span class="s1">$populacao </span><span class="s8">- </span><span class="s6">1</span><span class="s0">; 
+  </span><span class="s1">$divisor </span><span class="s8">= </span><span class="s1">$fixa1 </span><span class="s8">* </span><span class="s1">$confiab </span><span class="s8">+ </span><span class="s1">$populacao2 </span><span class="s8">* </span><span class="s1">$erroResult</span><span class="s0">; 
+  </span><span class="s1">$result </span><span class="s8">= </span><span class="s1">$dividendo </span><span class="s8">/ </span><span class="s1">$divisor</span><span class="s0">; 
+ 
+     </span><span class="s1">$result </span><span class="s8">= </span><span class="s5">ceil</span><span class="s0">(</span><span class="s1">$result</span><span class="s0">); 
+     </span><span class="s8">echo  </span><span class="s9">&quot;&lt;p align='center'&gt;</span><span class="s0">{</span><span class="s1">$dividendo</span><span class="s0">}</span><span class="s9">&lt;/p&gt;&quot;</span><span class="s0">; 
+     </span><span class="s8">echo  </span><span class="s9">&quot;&lt;p align='center'&gt;</span><span class="s0">{</span><span class="s1">$divisor</span><span class="s0">}</span><span class="s9">&lt;/p&gt;&quot;</span><span class="s0">; 
+     </span><span class="s8">echo  </span><span class="s9">&quot;&lt;p align='center'&gt;</span><span class="s0">{</span><span class="s1">$result</span><span class="s0">}</span><span class="s9">&lt;/p&gt;&quot;</span><span class="s0">; 
+ 
+     </span><span class="s8">echo  </span><span class="s1">$populacao </span><span class="s0">, </span><span class="s9">&quot; * &quot;</span><span class="s0">, </span><span class="s1">$fixa1 </span><span class="s0">,</span><span class="s9">&quot; * &quot; </span><span class="s0">,</span><span class="s1">$confiab2 </span><span class="s0">,</span><span class="s9">&quot;²                  =  &quot;</span><span class="s0">, </span><span class="s1">$dividendo</span><span class="s0">, </span><span class="s9">&quot;&lt;br/&gt;&quot; </span><span class="s0">; 
+     </span><span class="s8">echo </span><span class="s9">&quot;------------------------------------ &lt;br/&gt;&quot;</span><span class="s0">; 
+ 
+ 
+ 
+     </span><span class="s8">echo </span><span class="s1">$fixa1</span><span class="s0">, </span><span class="s9">&quot; * &quot;</span><span class="s0">, </span><span class="s1">$confiab2</span><span class="s0">, </span><span class="s9">&quot;²&quot; </span><span class="s0">, </span><span class="s9">&quot; + &quot;  </span><span class="s0">,</span><span class="s1">$populacao2 </span><span class="s0">, </span><span class="s9">&quot; * &quot;</span><span class="s0">, </span><span class="s1">$erro1 </span><span class="s0">, </span><span class="s9">&quot;²         = &quot;</span><span class="s0">,</span><span class="s1">$divisor </span><span class="s0">; 
+ 
+ 
+} 
+</span><span class="s8">?&gt;</span><span class="s0"> 
+&lt;</span><span class="s2">form </span><span class="s1">method=</span><span class="s4">&quot;post&quot; </span><span class="s1">enctype=</span><span class="s4">&quot;multipart/form-data&quot;</span><span class="s0">&gt; 
+  
+&lt;</span><span class="s2">div </span><span class="s1">class=</span><span class="s4">&quot;form-group&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">label</span><span class="s0">&gt;</span><span class="s3">População</span><span class="s0">&lt;/</span><span class="s2">label</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">input </span><span class="s1">type=</span><span class="s4">&quot;text&quot; </span><span class="s1">class=</span><span class="s4">&quot;form-control&quot; </span><span class="s1">name=</span><span class="s4">&quot;populacao&quot; </span><span class="s1">placeholder=</span><span class="s4">&quot;ex: 10000&quot;</span><span class="s0">&gt; 
+  &lt;/</span><span class="s2">div</span><span class="s0">&gt; 
+  &lt;</span><span class="s2">div </span><span class="s1">class=</span><span class="s4">&quot;form-group&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">label</span><span class="s3">&quot;&gt;Confiabilidade</span><span class="s0">&lt;/</span><span class="s2">label</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">input </span><span class="s1">type=</span><span class="s4">&quot;text&quot; </span><span class="s1">class=</span><span class="s4">&quot;form-control&quot; </span><span class="s1">name=</span><span class="s4">&quot;confiabilidade&quot; </span><span class="s1">placeholder=</span><span class="s4">&quot;1 - 2.57 , 2 - 1.96 , 3 - 1.64&quot;</span><span class="s0">&gt; 
+  &lt;/</span><span class="s2">div</span><span class="s0">&gt;   
+ &lt;</span><span class="s2">div </span><span class="s1">class=</span><span class="s4">&quot;form-group&quot;</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">label</span><span class="s3">&quot;&gt;Erro</span><span class="s0">&lt;/</span><span class="s2">label</span><span class="s0">&gt; 
+    &lt;</span><span class="s2">input </span><span class="s1">type=</span><span class="s4">&quot;text&quot; </span><span class="s1">class=</span><span class="s4">&quot;form-control&quot; </span><span class="s1">name =</span><span class="s4">&quot;erro&quot; </span><span class="s1">placeholder=</span><span class="s4">&quot;ex: 5&quot;</span><span class="s0">&gt; 
+  &lt;/</span><span class="s2">div</span><span class="s0">&gt;  
+  &lt;</span><span class="s2">button </span><span class="s1">type=</span><span class="s4">&quot;submit&quot; </span><span class="s1">name=</span><span class="s4">&quot;consultar&quot; </span><span class="s1">class=</span><span class="s4">&quot;btn btn-default&quot;</span><span class="s0">&gt;</span><span class="s3">Calcular</span><span class="s0">&lt;/</span><span class="s2">button</span><span class="s0">&gt; 
+ 
+&lt;/</span><span class="s2">form</span><span class="s0">&gt; 
+ 
+ 
+ 
+&lt;/</span><span class="s2">body</span><span class="s0">&gt; 
+&lt;/</span><span class="s2">html</span><span class="s0">&gt;</span></pre>
+</body>
+</html>
