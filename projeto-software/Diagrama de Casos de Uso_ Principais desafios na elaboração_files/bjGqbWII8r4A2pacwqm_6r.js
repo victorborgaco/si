@@ -1,0 +1,1 @@
+Tynt.sc({"d":true,"ap":"Leia mais em:","st":true,"domain":"devmedia.com.br"})

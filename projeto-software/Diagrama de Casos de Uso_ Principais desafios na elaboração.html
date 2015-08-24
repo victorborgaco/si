@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790 -->
+<html xmlns:og="http://opengraphprotocol.org/schema/" xml:lang="pt-br" lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Diagrama de Casos de Uso: Principais desafios na elaboração</title>
+<link href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/css" rel="stylesheet" type="text/css">
+<link href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/css(1)" rel="stylesheet" type="text/css">
+
+<link href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/artigo_style_2013.css" rel="stylesheet" type="text/css">
+<link href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/artigodev_style.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+
+<meta name="author" content="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790">
+
+
+
+	<meta property="og:image" content="http://www.devmedia.com.br/imagens/fotoscolunistas/image001-273.jpg">
+
+<meta name="description" content="Este artigo compartilha os principais desafios e dificuldades que programadores ou analistas de sistemas, que possuem um perfil mais técnico, enfrentam na elaboração ou compreensão de um diagrama de caso de uso."> 
+
+<link rel="canonical" href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/Diagrama de Casos de Uso_ Principais desafios na elaboração.html">
+
+
+<meta http-equiv="content-language" content="pt-br">
+<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=3.0,initial-scale=1.0">
+<meta name="msapplication-tap-highlight" content="no">
+
+<!-- ICON MAC -->  
+<link rel="apple-touch-icon" href="http://www.devmedia.com.br/favicon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.devmedia.com.br/imagens/2013/Devmedia72x.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.devmedia.com.br/imagens/2013/Devmedia114x.png">
+<link rel="apple-touch-icon" sizes="129x129" href="http://www.devmedia.com.br/imagens/2013/Devmedia129x.png">  
+<!-- FAVICON HTML5-->
+<link rel="icon" href="http://www.devmedia.com.br/favicon.png">
+<!-- FAVICON IE-->
+<link rel="icon" type="image/png" href="http://www.devmedia.com.br/favicon.png">
+
+<link href="https://plus.google.com/101753743720604160232" rel="publisher">
+<!-- CSS - RESET E PRESET -->
+<link rel="stylesheet" type="text/css" href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/devmedia.css">
+<!-- CSS - RESPONSIVO -->
+<link rel="stylesheet" type="text/css" href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/devmedia-responsive.css">
+<!-- CSS - HEADER E FOOTER -->
+<link rel="stylesheet" type="text/css" href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/devmedia-header-footer.css">
+<link rel="stylesheet" type="text/css" href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/style.min.css">
+
+<script src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/cb=gapi.loaded_1" async=""></script><script async="" type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/v2"></script><script async="" type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/bjGqbWII8r4A2pacwqm_6r.js"></script><script async="" type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/ti.js"></script><script src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/ga.js"></script><script id="facebook-jssdk" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/sdk.js"></script><script src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/jquery.min.js"></script>
+<script async="" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/menu.js"></script><script async="" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/menu.desktop.js"></script>
+  <!--[if lt IE 9]>
+	<script async defer src="js/modernizr.custom.js"></script>
+  <![endif]-->
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  /*js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=145393072270566";*/
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=145393072270566";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-15997918-1']);
+_gaq.push(['_setDomainName', 'devmedia.com.br']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<script async="" defer="" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/article.js"></script>
+
+<script async="" type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/plusone.js" gapi_processed="true"></script>
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "7fba8974-a42c-4d1b-96a9-4249a82ce8c0", onhover: false}); </script>	
+
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=3">
+
+
+<link rel="publisher" href="https://plus.google.com/101753743720604160232">
+
+<script type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/getAllAppDefault.esi"></script><link href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/style.css" type="text/css" rel="stylesheet"><script type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/checkOAuth.esi"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><link rel="stylesheet" type="text/css" href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/buttons.4d4008011051a133a045fe92d3143ad4.css"><script type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/getCount2.php"></script><script type="text/javascript" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/plusone.js" gapi_processed="true"></script></head>
+<body>
+<div class="dm-shadow"></div>
+<section class="dm-shell">
+<header>
+<span class="opacity"></span>
+<nav class="lateral" style="height: 935px;">
+<ul style="height: 935px;">
+<li><strong><a href="http://www.devmedia.com.br/" rel="nofollow"><span class="font-dev">bem</span><span class="font-media">vindo</span><span class="icon home"></span></a></strong></li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="back" data-main="true">Voltar</a></li>
+
+<li><a href="http://www.devmedia.com.br/meu-devmedia/"><span class="icon2 dashboard"></span>Meu DevMedia</a></li>
+<li><a href="http://www.devmedia.com.br/forum/"><span class="icon2 forum"></span>Fórum</a></li>
+<li><a href="http://www.devmedia.com.br/api/" style="text-transform:none;"><span class="icon2 devware"></span>APIs</a></li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" rel="nofollow"><span class="icon2 servicos"></span>Serviços<span></span></a>
+<ul>
+<li><h5>Serviços<span class="icon servicos"></span></h5></li>
+
+<li><p>Meus créditos: R$ 0</p></li>
+
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="back">Voltar</a></li>
+
+<li><a href="http://www.devmedia.com.br/publish/extrato_creditos.asp">Extrato créditos</a></li>
+<li><a href="http://www.devmedia.com.br/busca/?keyword=mrb427377">Posts que eu abri</a></li>
+
+<li><a href="http://www.devmedia.com.br/player" rel="nofollow">Devmedia Player</a></li>
+<li><a href="http://www.devmedia.com.br/join" rel="nofollow">Cadastre-se</a></li>
+<li><a href="http://www.devmedia.com.br/feed" rel="nofollow">RSS</a></li>
+<li><a href="http://www.devmedia.com.br/whatsnew/?id=1">O que há de novo </a></li>
+<li><a href="http://www.devmedia.com.br/como-gerenciar-os-posts-lidos-assistidos-no-portal-devmedia/25840" rel="nofollow">Gerenciando o que foi lido</a></li>
+</ul>
+</li>
+<li><a href="http://www.devmedia.com.br/mvp/" rel="nofollow"><span class="icon2 mvp"></span>MVP</a></li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" rel="nofollow"><span class="icon2 comprar"></span>Comprar<span></span></a>
+<ul>
+<li><h5>Comprar<span class="icon comprar"></span></h5></li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="back">Voltar</a></li>
+<li><a href="http://www.devmedia.com.br/mvp/" rel="nofollow">MVP</a></li>
+<li><a href="http://www.devmedia.com.br/shop/" rel="nofollow">Loja Virtual</a></li>
+<li><a href="http://www.devmedia.com.br/assine/#assine-revistas">Assine revistas</a></li>
+</ul>
+</li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" rel="nofollow"><span class="icon2 tecnologia"></span>Conteúdo<span></span></a>
+<ul>
+<li><h5>Conteúdo<span class="icon tecnologia"></span></h5></li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="back">Voltar</a></li>
+<li><a href="http://www.devmedia.com.br/mentoring/">Mentoring</a></li>
+<li><a href="http://www.devmedia.com.br/front-end-web">Front-end web</a></li>
+<li><a href="http://www.devmedia.com.br/mobile">Mobile</a></li>
+<li><a href="http://www.devmedia.com.br/java">Java</a></li>
+<li><a href="http://www.devmedia.com.br/dotnet">.net</a></li>
+<li><a href="http://www.devmedia.com.br/banco-de-dados">Banco de dados</a></li>
+<li><a href="http://www.devmedia.com.br/engenharia-de-software">Engenharia de Software</a></li>
+<li><a href="http://www.devmedia.com.br/php">PHP</a></li>
+<li><a href="http://www.devmedia.com.br/delphi">Delphi</a></li>
+<li><a href="http://www.devmedia.com.br/canais/">Todo o conteúdo</a></li>
+</ul>
+</li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" rel="nofollow"><span class="icon2 revistas"></span>Revistas<span></span></a>
+<ul>
+<li><h5>Revistas<span class="icon revistas"></span></h5></li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="back">Voltar</a></li>
+<li><a href="http://www.devmedia.com.br/revista-front-end-magazine">Front-end Magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-mobile-magazine">Mobile magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-java-magazine">Java Magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-easy-java-magazine">easy Java Magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-dotnet-magazine">.net Magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-easy-dotnet-magazine">easy .net Magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-sql-magazine">SQL Magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-engenharia-de-software-magazine">Engenharia de Software Magazine</a></li>
+<li><a href="http://www.devmedia.com.br/revista-clubedelphi">ClubeDelphi</a></li>
+<li><a href="http://www.devmedia.com.br/revistas/">Todas as revistas</a></li>
+</ul>
+</li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" rel="nofollow"><span class="icon2 cursos"></span>Cursos<span></span></a>
+<ul>
+<li><h5>Cursos<span class="icon cursos"></span></h5></li>
+<li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="back">Voltar</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/formacoes/">Formações completas</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/front-end-web">Cursos de front-end web</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/mobile">Cursos de Mobile</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/java">Cursos de Java</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/net">Cursos de .net</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/banco-de-dados">Cursos de Banco de dados</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/engenharia-de-software">Cursos de Engenharia de Software</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/php">Cursos de PHP</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/automacao">Cursos de Automação / NFe / Paf-ecf</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/delphi">Cursos de Delphi</a></li>
+<li><a href="http://www.devmedia.com.br/cursos/">Todos os cursos</a></li>
+</ul>
+</li>
+<li><a href="http://www.devmedia.com.br/videos-avulsos"><span class="icon2 pocketvideos"></span>Vídeos avulsos</a></li>
+<li><a href="http://www.devmedia.com.br/fale-conosco/" rel="nofollow"><span class="icon2 atendimento"></span>Fale conosco</a></li>
+<li><a href="http://www.devmedia.com.br/login/logout.asp"><span class="icon2 logout"></span>Logout</a></li>
+</ul>
+</nav>
+            <!-- MENU DESKTOP -->  
+            <nav class="dm-bgnav-out">
+			  <div class="container-fluid dm-bgnav"> <!-- MOSTRAR E OCULTAR NAVBAR -->
+                <div class="container">     
+                  <div class="devmenu">  
+                    
+                    <i class="drop-mobile"><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="menu"></a></i>
+					<a class="logo-mob" href="http://www.devmedia.com.br/"><span class="font-dev">Dev</span><span class="font-media">Media</span></a>
+                    <span id="headermenudesktop"><ul class="navspace menucel ativo3 dm-1"><li><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" rel="nofollow" class="menulink">Iniciar &nbsp;<small>&#9660;</small></a>	<ul class="submenu">	<li><a href="http://www.devmedia.com.br/cursos/">Cursos &nbsp;»</a>		<ul class="submenu2">		<li><a href="http://www.devmedia.com.br/cursos/front-end-web">Cursos de front-end web</a></li>		<li><a href="http://www.devmedia.com.br/cursos/mobile">Cursos de Mobile</a></li>		<li><a href="http://www.devmedia.com.br/cursos/java">Cursos de Java</a></li>		<li><a href="http://www.devmedia.com.br/cursos/net">Cursos de .net</a></li>		<li><a href="http://www.devmedia.com.br/cursos/banco-de-dados">Cursos de Banco de dados</a></li>		<li><a href="http://www.devmedia.com.br/cursos/engenharia-de-software">Cursos de Engenharia de Software</a></li>		<li><a href="http://www.devmedia.com.br/cursos/php">Cursos de PHP</a></li>		<li><a href="http://www.devmedia.com.br/cursos/automacao">Cursos de Automação / NFe / Paf-ecf</a></li>		<li><a href="http://www.devmedia.com.br/cursos/delphi">Cursos de Delphi</a></li>		<li><a href="http://www.devmedia.com.br/cursos/" class="btn-dm-nav">Todos os cursos</a></li>		</ul>	</li>	<li><a href="http://www.devmedia.com.br/cursos/formacoes/">Formações &nbsp;»</a>		<ul class="submenu2">		<li><a href="http://www.devmedia.com.br/curso/formacao-front-end-web/404">Formação de Front-end</a></li>		<li><a href="http://www.devmedia.com.br/curso/formacao-android/405">Formação de Mobile</a></li>		<li><a href="http://www.devmedia.com.br/cursos/formacoes/java">Formações de Java</a></li>		<li><a href="http://www.devmedia.com.br/cursos/formacoes/net">Formações de .NET</a></li>		<li><a href="http://www.devmedia.com.br/curso/formacao-banco-de-dados/408">Formação de Banco de Dados</a></li>		<li><a href="http://www.devmedia.com.br/curso/formacao-engenharia-de-software/414">Formação Engenharia de Software</a></li>		<li><a href="http://www.devmedia.com.br/curso/formacao-delphi-developer/109">Formação de Delphi</a></li>		<li><a href="http://www.devmedia.com.br/curso/formacao-programacao-para-iniciantes/417">Formação Iniciantes</a></li>		<li><a href="http://www.devmedia.com.br/cursos/formacoes/" class="btn-dm-nav">Todas as formações</a></li>		</ul>	</li>	<li><a href="http://www.devmedia.com.br/videos-avulsos">Vídeos avulsos &nbsp;»</a>		<ul class="submenu2">		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=58#result"">Vídeos de Front-end web</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=38#result">Vídeos de Mobile</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=34#result">Vídeos de Java</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=35#result">Vídeos de .NET</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=37#result">Vídeos de Banco de dados</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=43#result">Vídeos de Engenharia de Software</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=44#result">Vídeos de PHP</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=46#result">Vídeos de Infra</a></li>		<li><a href="http://www.devmedia.com.br/articles/listcomp.asp?tipo=18&site=42#result">Vídeos Diversos</a></li>		<li><a href="http://www.devmedia.com.br/busca/?txtsearch=&tipo=18&vis=0&site=0#result">Pockets Gratuitos</a></li>		<li><a href="http://www.devmedia.com.br/videos-avulsos" class="btn-dm-nav">Todos os vídeos avulsos</a></li>		</ul>	</li>	<li><a href="http://www.devmedia.com.br/guias/">Guias de Referência &nbsp;»</a>		<ul class="submenu2">		<li><a href="http://www.devmedia.com.br/guia-html5/31741">Guia HTML</a></li>		<li><a href="http://www.devmedia.com.br/guia-asp-net-mvc/32173">Guia ASP.NET MVC</a></li>		<li><a href="http://www.devmedia.com.br/guia-php/32471">Guia PHP</a></li>		<li><a href="http://www.devmedia.com.br/guias/" class="btn-dm-nav">Todos os guias de referência</a></li>		</ul>	</li>	<li><a href="http://www.devmedia.com.br/revistas/">Revistas &nbsp;»</a>		<ul class="submenu2">		<li><a href="http://www.devmedia.com.br/revista-front-end-magazine">Front-end Magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-mobile-magazine">Mobile magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-java-magazine">Java Magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-easy-java-magazine">easy Java Magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-dotnet-magazine">.net Magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-easy-dotnet-magazine">easy .net Magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-sql-magazine">SQL Magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-engenharia-de-software-magazine">Engenharia de Software Magazine</a></li>		<li><a href="http://www.devmedia.com.br/revista-clubedelphi">ClubeDelphi</a></li>		<li><a href="http://www.devmedia.com.br/revistas/" class="btn-dm-nav">Todas as revistas</a></li>		</ul>	</li>	<li><a href="http://www.devmedia.com.br/canais/">Canais &nbsp;»</a>		<ul class="submenu2">		<li><a href="http://www.devmedia.com.br/front-end-web">Front-end web</a></li>		<li><a href="http://www.devmedia.com.br/mobile">Mobile</a></li>		<li><a href="http://www.devmedia.com.br/java">Java</a></li>		<li><a href="http://www.devmedia.com.br/dotnet">.net</a></li>		<li><a href="http://www.devmedia.com.br/banco-de-dados">Banco de dados</a></li>		<li><a href="http://www.devmedia.com.br/engenharia-de-software">Engenharia de Software</a></li>		<li><a href="http://www.devmedia.com.br/php">PHP</a></li>		<li><a href="http://www.devmedia.com.br/delphi">Delphi</a></li>		<li><a href="http://www.devmedia.com.br/canais/" class="btn-dm-nav">Todo o conteúdo</a></li>		</ul>	</li>	<li style="padding-top:3px;"><a href="http://www.devmedia.com.br/mentoring/" style="padding-top: 7px;border-top: 1px solid #fff;">Conteudo Mentoring</a>		<ul class="submenu2">		</ul>	</li>	<li><a href="http://www.devmedia.com.br/busca/?txtsearch=devcast&tipo=0&vis=-1&site=0#result">DevCasts</a>		<ul class="submenu2">		</ul>	</li>	</ul></li></ul><ul class="menucel dm-5"><li><a href="http://www.devmedia.com.br/forum/" class="menulink2">Fórum</a></li></ul><ul class="menucel dm-5"><li><a href="http://www.devmedia.com.br/api/" rel="nofollow" class="menulink2" style="text-transform:none;">APIs</a></li></ul><ul class="menucel dm-6"><li><strong><a href="http://www.devmedia.com.br/mvp/" class="menulink2">Assine MVP</a></strong></li></ul></span>
+					
+					<div class="login-box">
+                    <div class="login-btn dm-5pxtop">
+					  <img title="Assinante MVP" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/mvp-medal.png" style="float: left;height: 40px;margin-right: 15px;">
+                      <div class="popover2"><img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/427377_20150618111734.jpg"></div>
+					  <div class="pai">
+                        <div class="login-pop logado">
+                          <div class="login-form">
+                            <div class="seta2"></div>
+                              <ul class="user-foto">
+                            <li><a href="http://www.devmedia.com.br/meu-devmedia/"><img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/427377_20150618111734.jpg"><span>Meus dados</span></a></li>
+                            </ul>
+                            <ul class="user-dados">
+                              <li class="dm-u-nome"><a href="http://www.devmedia.com.br/meu-devmedia/">Silas Dantas</a></li>
+                              
+                                <li class="dm-u-logout"><a class="perfil" href="http://www.devmedia.com.br/meu-devmedia/">Ver perfil</a><a href="http://www.devmedia.com.br/login/logout.asp">Sair</a></li>
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- FIM MENU DESKTOP -->
+
+            <!-- REVELAR MENU DROP-->
+			<div class="revelar dm-cor5">
+            <!-- DIV COM O Z-INDEX QUE SOBREPOE O DROPDOWN, CRIA A IDEIA DE REVELAR O MENU ESCONDIDO NA TRANSIÇÃO --> 
+              <!-- BLOCO TOPO -->
+			  <div class="container-fluid dm-busca">
+                <div class="container">
+                  <div class="row-fluid"> <!-- CABEÇALHO -->
+                    <a href="http://www.devmedia.com.br/"><img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/logo.png" alt="DevMedia" title="DevMedia"></a>
+                    <!-- BUSCA EM TELA DESKTOP E TABLET -->
+                    <nav id="busca">
+					  <form action="http://www.devmedia.com.br/busca/">
+                        <input type="text" name="txtsearch" placeholder="Buscar">
+                        <button type="submit"></button>
+					  </form>
+                    </nav>
+                  </div><!-- FIM CABEÇALHO -->
+                </div>
+              </div>
+              <!-- FIM BLOCO TOPO -->
+			  </div>
+</header>
+
+
+<div id="main">	
+	
+	
+
+	<div id="div_corpo_post">	 
+			
+			<section id="boxes_de_aviso">
+			<a name="boxvalorcreditos"></a>
+			<div id="div_feedback_post">
+							
+					<span>Você precisa ter acesso ao post para votar.</span>
+				
+			</div>
+
+<div id="pop">
+	  
+	  Para efetuar o download, você precisa ter acesso a este post. Saiba mais sobre a <a href="http://www.devmedia.com.br/mvp" rel="nofollow" target="_blank" class="linkpadrao"><b>assinatura MVP</b></a>
+	  
+</div>	
+			</section>
+						
+			
+								
+			
+			<!-- section barra botoes -->
+			
+			<article id="div_conteudo_post">
+
+			<section id="barra_botoes">
+			
+						   
+			   <label class="label_barra_botoes"><a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#comentariosArtigo" rel="nofollow" class="link_barra_botoes" stlye="color:white;">comentários</a></label>
+
+			   <label class="label_barra_botoes"><a href="http://www.devmedia.com.br/favorite/addfavorite.asp?comp=29790" rel="nofollow" target="_blank" class="link_barra_botoes">favorito (12)</a></label>
+				
+				
+				<label class="label_barra_botoes"><a href="http://www.devmedia.com.br/favorite/add_finished.asp?comp=29790" class="link_barra_botoes" rel="nofollow">marcar como lido</a></label>
+				
+				<label class="label_barra_botoes"><a class="link_barra_botoes" href="http://www.devmedia.com.br/articles/viewcomp_forprint.asp?comp=29790">para impressão</a></label>
+				
+
+				<label class="label_barra_botoes"><a class="link_barra_botoes" href="http://www.devmedia.com.br/anotacoes/add/?idcomp=29790" rel="nofollow">anotar</a></label>
+
+			   
+			   			
+			</section>		
+			
+			
+			<div class="margin_top20"></div>
+			<span id="span_indice_revista"> 
+			<a href="http://www.devmedia.com.br/articles/viewcomp.asp?comp=29814" class="linkpadrao_branco">Engenharia de Software&nbsp;65 - Índice</a>
+			</span>
+
+			
+			
+									
+			<header>
+			<h1 class="normal">Diagrama de Casos de Uso: Principais desafios na elaboração</h1>				
+			<div id="div_descricao">					
+			<h2 class="normal">Este artigo compartilha os principais desafios e dificuldades que programadores ou analistas de sistemas, que possuem um perfil mais técnico, enfrentam na elaboração ou compreensão de um diagrama de caso de uso.</h2>				
+			</div>
+			</header>
+			
+																
+							
+			<div id="div_barrasocial"> 
+				 
+				
+				<div id="box_social">		
+				  <span class="st_twitter_hcount" displaytext="Tweet" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span><span class="stMainServices st-twitter-counter" style="background-image: url(http://w.sharethis.com/images/twitter_counter.png);">&nbsp;</span><span class="stArrow"><span class="stButton_gradient stHBubble" style="display: inline-block;"><span class="stBubble_hcount">2</span></span></span></span></span></span>
+				  <span class="st_plusone_hcount" displaytext="Tweet2" st_processed="yes"><div style="display:inline-block;overflow:hidden;line-height:0px;position:relative;vertical-align:middle;bottom:0px;width:75px; height:21px;">&nbsp;<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1440420047611" name="I0_1440420047611" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div></div></span>
+				  <span class="st_fblike_hcount" displaytext="Facebook" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;position:relative;margin:3px 3px 0;padding:0px;font-size:11px;line-height:0px;vertical-align:bottom;overflow:visible;"><div data-action="" data-send="false" data-layout="button_count" data-show-faces="false" class="fb-like fb_iframe_widget" data-href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=145393072270566&amp;container_width=0&amp;href=http%3A%2F%2Fwww.devmedia.com.br%2Fdiagrama-de-casos-de-uso-principais-desafios-na-elaboracao%2F29790&amp;layout=button_count&amp;locale=pt_BR&amp;sdk=joey&amp;send=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 84px; height: 20px;"><iframe name="f2101a025" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/like.html" style="border: none; visibility: visible; width: 84px; height: 20px;" class=""></iframe></span></div></span></span>
+				</div> 			
+				
+				<span id="ja_votou">0</span>
+
+
+
+<div id="box_fb_comp">			
+	
+	
+
+		<label>
+		<a class="linkfeedback" href="javascript:;" onclick="votaPost(29790,1);">
+		<img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/handUp.png" border="0">
+		</a>
+		</label>
+
+	<label style="margin-right:30px;">
+	<a class="linkfeedback" href="javascript:;" onclick="votaPost(29790,1);">
+	&nbsp;Gostei (<span id="counterUp">10</span>)
+	</a>
+	</label>
+
+	
+	<label>
+	<a class="linkfeedback" href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#link_voto_negativo" onclick="showBoxConfirmaVoto(0);">
+	<img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/handDown.png" border="0" style="vertical-align:text-bottom;">
+	</a>
+	</label>
+
+	<label>
+	<a class="linkfeedback" href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#link_voto_negativo" onclick="showBoxConfirmaVoto(0);">
+	<span id="counterDown">&nbsp;(0)</span>
+	</a>
+	</label>
+	
+	
+	
+	
+</div>
+	
+				
+				<div class="t_clear_both"></div>
+			
+			</div>
+			<a name="link_voto_negativo"></a>
+<section id="box_voto_negativo">
+
+	<a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" onclick="document.getElementById(&#39;box_voto_negativo&#39;).style.display=&#39;none&#39;;" class="linkpadrao">[fechar]</a>		
+	<p class="frase_box_qualidade1">Você não gostou da <b>qualidade</b> deste conteúdo?</p>
+	<p class="frase_box_qualidade2">(opcional) Você poderia comentar o que não lhe agradou?</p>		
+	
+	<div id="form_voto_negativo">
+	<form name="form_voto_negativo" method="post" action="http://www.devmedia.com.br/articles/grava_fb_negativo.asp">
+	  <textarea id="texto_voto" name="texto_voto"></textarea>
+	  <input type="hidden" name="idcomp" value="29790">
+	</form>
+	</div>
+
+	<span id="div_confirma_voto_negativo">
+	<a href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#" class="botao_confirma_negativo" onclick="document.forms[&#39;form_voto_negativo&#39;].submit(); return false;">Confirmo meu voto negativo</a>
+	</span>
+</section>
+				<div id="div_conteudo">
+					
+					<div id="section_conteudo_post"> 
+					
+					<p></p><div class="margin_top40"><span id="span_rotulo_mentoring"><a href="http://www.devmedia.com.br/devmedia-mentoring-entenda-o-que-sao-artigos-e-videos-do-tipo-mentoring/29574" class="link_rotulo_mentoring" target="_blank">Artigo no estilo <strong>Mentoring</strong> (saiba mais)</a></span></div><p></p>
+
+<p></p><div id="box_lead2"><div id="titulo_box_mentoring">Mentoring: apresentação do cenário</div> Este artigo é
+recomendado para todos os membros envolvidos no desenvolvimento de software que
+possuem interação com casos de uso. A proposta não é fazer um passo a passo
+sobre como fazer um diagrama de caso de uso, mas sim, compartilhar os
+principais desafios e dificuldades que programadores ou analistas de sistemas,
+que possuem um perfil mais técnico, enfrentam na elaboração ou compreensão
+deste diagrama.<p></p>
+
+<p>Um projeto é
+considerado bem sucedido quando ele é entregue para o seu usuário final e este
+não encontra divergências entre o que se pediu e o que foi feito. E entregar
+exatamente o solicitado é um processo complicado, pois exige muito mais do que
+o conhecimento de uma linguagem de programação.</p>
+<p> É necessário entender o negócio
+do cliente e saber transpor de forma clara e objetiva todas as funcionalidades
+solicitadas. Dentro de um projeto de software, isto é feito na fase de análise
+de sistemas e as funcionalidades são descritas, na maioria das vezes, seguindo
+os padrões definidos por uma linguagem de modelagem unificada, a UML, através
+de diagramas de casos de uso. </p></div><p></p>
+
+<p>Todo
+profissional deve estar sempre preparado para encarar desafios, dificuldades e
+superá-los com sucesso. Isso acontece em qualquer área e é o que todo chefe
+espera de seus funcionários. Em TI isso não seria diferente. É muito comum em
+nosso ramo ouvirmos que o prazo para a criação de um projeto é apertado e que o
+orçamento é curto, porém temos que entregá-lo com sucesso, dentro do prazo
+estabelecido e com qualidade.</p><p> E para que isso aconteça, os profissionais
+precisam desdobrar-se e por muitas vezes executar atividades das quais não
+tiveram tempo hábil para se preparar ou ainda não tem conhecimento suficiente
+para executá-los. Um exemplo clássico é quando programadores ou analistas com
+perfis mais técnicos são selecionados para entrevistar os usuários e descrever
+todas as funcionalidades em casos de uso na fase de análise do projeto.</p>
+
+<p>Neste
+contexto, esse artigo apresenta as principais dificuldades encontradas por
+estes profissionais na elaboração de um caso de uso e sugestões de como
+resolver os principais problemas, mitigando os riscos de não ter todas as
+funcionalidades descritas seguindo as melhores práticas abordadas pela UML (ler
+<strong>BOX 1</strong>).</p>
+
+
+
+<p><strong></strong></p><div class="artigo_nota1"><strong>BOX
+1. UML</strong>
+
+<p>A UML (Unified Modeling
+Language ou Linguagem de Modelagem Unificada) é uma linguagem visual utilizada
+para modelar sistemas computacionais. Essa linguagem se tornou, nos últimos
+anos, a linguagem-padrão de modelagem de software adotada internacionalmente
+pela indústria de Engenharia de Software.</p><p> Deve ficar bem claro que a UML não é
+uma linguagem de programação, e que o seu objetivo é auxiliar os engenheiros de
+software a definir as características do software, tais como seus requisitos,
+seu comportamento, sua estrutura lógica, a dinâmica de seus processos e até
+mesmo suas necessidades físicas em relação ao equipamento sobre o qual o
+sistema deverá ser implantado. </p><p>Todas essas características são definidas por
+meio da UML antes do software começar a ser realmente desenvolvido.</p>
+
+<p>A UML possui
+diversos diagramas com o objetivo de fornecer múltiplas visões do sistema,
+analisando-o e modelando-o sob diversos aspectos. Cada diagrama da UML analisa
+o sistema, ou parte dele, sob uma determina visão. Alguns diagramas enfocam o
+sistema de forma mais comportamental, apresentando uma visão das
+funcionalidades do sistema, como é o objetivo do diagrama de casos de uso, ao
+passo que outros oferecem uma visão de uma camada mais profunda do software,
+apresentando um enfoque mais técnico.</p></div><p></p>
+
+<p>O desenvolvimento
+de software, independente da metodologia adotada, possui as fases de análise, desenho
+(design), codificação, testes e implantação. Cada uma destas fases tem uma
+importância crucial, e para atingir os objetivos do projeto, todas devem ser criteriosamente
+elaboradas, seja utilizando uma abordagem mais rica em documentação, como, por
+exemplo, o UP (Unified Process) ou metodologias mais ágeis como o SCRUM. </p>
+
+<p>Em TI, costuma-se
+priorizar as atividades de design e codificação. Isso acontece pelo perfil do
+profissional que atua na área, formada principalmente por técnicos, que dedicam
+boa parte do seu tempo em estudos e pesquisas em linguagens de programação e
+tem um interesse muito maior por bits e bytes do que por documentação.</p><p> Outro
+ponto que direciona estes profissionais a gostarem mais da parte técnica é a
+grade curricular dos cursos de tecnologia na maioria das universidades, que
+possuem um grande número de disciplinas referentes à programação e muito pouco
+referente à metodologias, processos e documentações.</p>
+
+<p>Porém, a fase
+de análise de sistemas é de fundamental importância para o sucesso de um
+projeto, pois é nela que será entendido todo o negócio do cliente e descritas
+todas as funcionalidades e comportamentos esperados para o sistema. Um projeto
+é considerado bem sucedido quando ele é entregue para o seu usuário final e
+este não encontra divergências entre o que se pediu e o que foi feito.</p><p> E
+entregar exatamente o solicitado é um processo complicado, pois exige muito
+mais do que o conhecimento de uma linguagem de programação. </p>
+
+<p>Uma boa
+prática para descrever as funcionalidades do sistema é seguir os padrões
+definidos por uma linguagem de modelagem unificada, a UML, através de diagramas
+de casos de uso. Este diagrama é utilizado principalmente para auxiliar no
+levantamento e análise dos requisitos, em que são determinadas as necessidades
+do usuário, e na compreensão do sistema como um todo, embora venha a ser
+consultado durante todo o processo de modelagem e sirva de base para todos os
+outros diagramas.</p><p> O diagrama de casos de
+uso apresenta uma linguagem simples e de fácil compreensão para que os usuários
+possam ter uma ideia geral de como o sistema irá se comportar.</p>
+
+<p>Normalmente,
+os casos de uso são elaborados por profissionais que tem perfil de análise de
+sistemas, que conseguem entrevistar os clientes, entender todas as suas
+necessidades, e transpor de forma clara e objetiva, todos os cenários
+propostos. Entretanto, o mundo corporativo, com suas premissas de curto prazo e
+orçamento apertado, muitas vezes
+propicia o surgimento de situações de desvio do cenário ideal para o
+desenvolvimento de um projeto.</p><p> Tais desvios podem surpreender funcionários, que
+passam a assumir papéis e responsabilidades das quais não tiveram tempo hábil
+para se preparar ou ainda não tem conhecimento suficiente para executá-los. Um
+exemplo clássico desses desvios é observado quando pessoas de vocação técnica e
+aptidão para a codificação de programas são deslocadas para elaborarem casos de
+uso na fase de Análise do Projeto.</p>
+
+<p>Pessoas das
+áreas mais técnicas tendem a explicar como devemos resolver um problema.
+Entretanto, quando estas pessoas assumem o papel de Analista de Negócio durante
+a fase de análise do projeto, elas devem, entre outras tarefas, especificar o
+que tem que ser feito, e deixar para a próxima fase, a de desenho físico, a
+explicação de que forma o problema ou o cenário proposto na fase anterior será
+solucionado tecnicamente.</p>
+
+<p> Outra grande dificuldade encontrada é que casos
+de uso são subjetivos. Eles não são definidos por uma gramática rigorosa como
+são nossas linguagens de programação. Não existem compiladores que analisam casos
+de uso e comprovam se eles estão válidos, bem formatados e se fazem sentido
+para o negócio.</p>
+
+<p>Em análise de
+exemplos reais, é possível observar o cenário descrito acima, com diversas
+pessoas com vocação e experiência técnica especificando casos de uso. Em alguns
+exemplos, existe ainda um agravante, onde muitos possuem apenas experiência em
+“Alta Plataforma (Mainframe)”, o que cria um grau de complexidade ainda maior,
+por nunca terem visto nada em UML.</p><p> Geralmente, pessoas com experiência em
+“Baixa Plataforma”, se nunca elaboraram um caso de uso, pelo menos já tiveram a
+oportunidade de visualizar um diagrama em UML, e neste caso, os atores,
+cenários e relacionamentos não são tão complexos como para as pessoas que
+estavam acostumadas a trabalhar apenas com fluxogramas.</p>
+
+<p>A partir de
+agora serão abordados alguns dos problemas mais comuns encontrados em casos de uso
+elaborados por pessoas técnicas, acompanhados de algumas dicas para solução:</p>
+
+<p><strong><span class="subtitulo_texto">O que fazer? x Como
+fazer?</span></strong></p>
+
+<p>Um dos
+problemas mais comuns na elaboração de casos de uso é encontrar, em sua
+descrição, de que forma vamos resolver um problema ou uma ação esperada. A
+forma ou método utilizado para resolver o problema ou para explicar “como
+fazer” deve ser considerado em uma fase posterior do projeto. </p>
+
+<p>Como podemos
+ter certeza ainda na fase de análise que o que estou dizendo no “como fazer” é
+a melhor alternativa? Não é possível ter esta certeza, pois nesta fase do
+projeto estamos ainda entendendo e detalhando o escopo, isto é, o que tem que
+ser feito. Quando todo o escopo estiver detalhado, será possível ter uma visão
+completa e optar pela melhor alternativa para resolver o cenário proposto.</p>
+
+<p>E para ter
+esta visão detalhada, é preciso entender todas as funcionalidades solicitadas
+para o sistema. E é isso que a descrição do caso de uso tem que conter. É
+necessário descrever passo a passo toda a interação entre um “Ator” e um
+“Sistema”, sempre detalhando o que tem que ser feito com uma visão de negócio.<strong></strong></p>
+
+<p><strong><span class="subtitulo_texto">Descrever os passos
+dos fluxos tecnicamente</span></strong></p>
+
+<p>Como boa
+prática na especificação de um caso de uso, não se deve descrever nos passos
+dos fluxos informações técnicas ou de interface com o usuário.</p>
+
+<p>Exemplo de um
+passo com informação técnica e com detalhe de interface:</p>
+
+<p>- O Sistema
+irá buscar no servidor “SRV_PROD_005A”, base de dados “SCH_CORP”, tabela
+“TB_045_CLIE”, os campos “CLI_ST_NOME”, “CLI_ST_FONE”, “CLI_ST_ENDE” através do
+sinônimo “TB_CLIENTE” para apresentar no pop-up.</p>
+
+<p>Exemplo do
+mesmo passo, descrito com visão de negócio:</p>
+
+<p>- O Sistema
+apresenta ao “Ator” as informações “Nome”, “Telefone” e “Endereço” do Cliente
+selecionado.</p>
+
+<p>Como se pode
+verificar, existe uma grande diferença nos itens acima. Se você tiver um
+conhecimento técnico, pode pensar: com as informações do primeiro item (como
+fazer) eu consigo programar e com as do item debaixo (o que fazer), não. Porém,
+deve-se ter em mente alguns pontos importantes para a fase de análise:</p>
+
+<p>·
+Quem
+deve validar o caso de uso é uma pessoa que tem conhecimento do negócio e na
+maior parte das vezes ela não faz ideia o que é um banco de dados;</p>
+
+<p>·
+Se
+um sistema novo estiver sendo criado, com o escopo ainda sendo detalhado, não é
+possível saber quais tabelas ou campos devem ser criados;</p>
+
+<p>·
+Um
+detalhamento excessivo de interface visual durante a fase de análise pode
+limitar o design do sistema. Especificar detalhes visuais se faz necessário
+somente para o entendimento do comportamento do sistema.</p>
+
+<p>Caso
+informações técnicas estejam disponíveis durante a descrição do caso de uso, é
+possível criar uma seção “Direcionamento Técnico” e informar nesta seção os
+servidores, tabelas, campos ou outras informações técnicas que facilitarão o
+entendimento do analista de sistema quando o mesmo estiver fazendo o “desenho
+lógico e/ou físico” da aplicação.</p>
+
+<p><strong><span class="subtitulo_texto">Utilizar
+a “Extends” do caso de uso exatamente como a herança na programação orientada a
+objetos</span></strong></p>
+
+<p>Na orientação
+a objeto, quando se diz que uma classe herda de outra, isto significa que ela
+passa a ter também as funcionalidades e comportamentos desta classe herdada.
+Entretanto, para casos de uso, o conceito de “extends” é um pouco diferente.
+Ele é usado para mostrar que um caso de uso pode adicionar a funcionalidade de
+outro caso de uso em determinadas circunstâncias. </p><p>Podemos dizer que ao estender
+outro caso de uso, ele poderá acionar uma funcionalidade deste caso de uso
+herdado em algum momento de sua funcionalidade original. Por exemplo, o caso de
+Uso “Efetuar Login” de um sistema pode incluir a opção “Registrar nova conta”,
+mas só quando o usuário ainda não tiver uma conta (ver <strong>Figura 1</strong>).</p>
+
+<p><img class="imagem_artigo" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/1.png"></p>
+
+<p>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+</p>
+
+<p><strong>Figura
+1. </strong>Representação
+de “Extends” nos Casos de Uso<strong>.</strong><strong></strong></p>
+
+<p>Quando um caso
+de uso adiciona a funcionalidade de outro caso de uso em todas as situações,
+deve-se utilizar o relacionamento “include” ao invés de “extends”. Por exemplo,
+o caso de uso “Processar Pedido” inclui a opção “Emitir Nota Fiscal”. Isto
+significa que sempre que o caso de uso “Processar Pedido” for acionado, a opção
+“Emitir Nota Fiscal” também será acionada (ver <strong>Figura 2</strong>).</p>
+
+<p><img class="imagem_artigo" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/2.png"></p>
+
+<p>
+ 
+</p>
+
+<p><strong>Figura 2. </strong>Representação de “Include” nos Casos
+de Uso.</p>
+
+<p><strong><span class="subtitulo_texto">Identificar cada caso
+de uso como uma classe, um programa ou sub-programa</span></strong></p>
+
+<p>Um problema conceitual
+é criar uma associação que um caso de uso representa uma classe (na baixa plataforma)
+ou um programa / sub-programa (na alta plataforma). O caso de uso deve
+representar uma funcionalidade, e esta pode derivar em um ou mais
+programas/classes, conforme solução técnica que será definida na fase de
+desenho físico.</p>
+
+<p>Desta forma,
+sempre que for mapear os casos de uso a serem elaborados, pense em
+funcionalidades. Procure abstrair o que será necessário criar tecnicamente para
+implementar estas funcionalidades.</p>
+
+<p><strong><span class="subtitulo_texto">Caso de uso sem ator
+relacionado</span> </strong></p>
+
+<p>Conceitualmente,
+os passos dos fluxos do caso de uso descrevem a interação entre o ator e o sistema.
+A questão ator gera bastante confusão, pois passa a impressão muitas vezes
+errônea de que tem que ser uma pessoa. Devido a esta confusão, já foram
+encontrados diversos casos de uso sem ter um ator relacionado, já que o mesmo
+era disparado automaticamente por um sistema e neste caso não tinha uma
+“pessoa” ou um “ator humano” para associar.</p><p> Este erro é bastante comum em casos
+de uso que descrevem cenários que irão ocasionar no desenho físico, programas
+batch, web-services, etc. Para este cenário, têm-se como atores os sistemas que
+chamam e iniciam os casos de uso. Por exemplo: o processamento batch que envia
+os dados contábeis para o Banco Central é acionado por um “Scheduler” (ver <strong>Figura 3</strong>).</p>
+
+<p><strong></strong><img class="imagem_artigo" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/3.png"></p>
+
+<p>
+ 
+<strong></strong></p>
+
+<p><strong>Figura
+3. </strong>Representação
+de um sistema como “Ator”.<strong></strong></p>
+
+<p><strong><span class="subtitulo_texto">Caso de uso sem um
+início definido</span> </strong></p>
+
+<p>Todo caso de uso
+deve ter um início, isto é, deve ter um ator que o aciona. Para facilitar o
+entendimento, pode-se citar tecnicamente que o início de um caso de uso pode
+ser a seleção de uma opção ou um agendamento de um processo batch, etc. Como exemplo, tem-se: </p>
+
+<p>01. Este caso
+de uso inicia quando o ator seleciona a opção “Incluir Cliente” da “Tela
+Inicial”.</p>
+
+<p><strong><span class="subtitulo_texto">Requisitos de negócio
+sem caso de uso relacionado</span></strong></p>
+
+<p>Como saber se
+todos os casos de uso foram mapeados e descritos? Será que nenhum caso de uso
+foi esquecido? Esta é uma dificuldade para quem precisa ter uma visão global do
+projeto.</p>
+
+<p>Para auxiliar
+nesta situação, uma boa dica é utilizar uma matriz de relacionamento
+“Requisitos x Casos de Uso”, para não deixar nenhum requisito funcional sem um caso
+de uso associado. Alguns sistemas de mercado como, por exemplo, o Enterprise
+Architect da Sparx Systems, criam esta matriz automaticamente.</p>
+
+<p><strong><span class="subtitulo_texto">Atraso na data de
+entrega acordada para os casos de uso</span></strong></p>
+
+<p>Muitas
+pessoas, quando têm a responsabilidade de identificar e descrever todos os casos
+de uso de um projeto ou de um módulo do projeto, têm o hábito de identificar um
+caso de uso e já descrevê-lo. Apesar de não ser uma prática errada, a maneira
+mais segura de fazê-la é mapeando todos os casos de uso antes de
+especificá-los. </p><p>Desta forma, é possível identificar partes que serão
+reutilizadas (casos de uso que podem ser incluídos ou estendidos) e também ter
+uma visibilidade da complexidade e qual a produtividade média para descrever
+cada caso de uso. Com isso, é possível auxiliar os gerentes de projeto a
+mitigarem o risco de possíveis atrasos nas datas acordadas.</p>
+
+<p><strong><span class="subtitulo_texto">Dar nome ao caso de uso</span></strong></p>
+
+<p>Muitos dos casos
+de uso revisados em projetos não seguem as normas pré-estabelecidas para a
+nomenclatura, tais como: eles deveriam começar com um verbo como, por exemplo,
+“Consultar”, “Incluir”, “Alterar”, etc.</p>
+
+<p>Assim, ter um
+padrão de nomes e um guia para seguir é sempre importante. </p>
+
+<p>Para minimizar
+este problema de “esquecimento” ou mesmo de “falta de conhecimento das normas
+de nomenclatura”, uma boa dica é ter um checklist que o analista deve usar
+sempre que finalizar o seu caso de uso. Este checklist deve conter validações
+para todas as regras e normas, o que o ajudará a revisar se algo foi esquecido
+ou criado de maneira inválida.</p>
+
+<p><strong><span class="subtitulo_texto">Conclusão</span></strong></p>
+
+<p>Todos estes
+problemas e dificuldades relatados aqui demonstram que apesar de ter uma
+notação simples e da sua teoria não ser extensa, elaborar casos de uso não é
+ato trivial tanto quanto pode aparentar ser.</p>
+
+<p>É importante
+que todos os membros envolvidos no desenvolvimento de software, que utilizam
+UML, entendam como elaborar e como interpretar um caso de uso, pois ele é a
+base de todo o projeto. Durante a fase de análise, ele é o principal entregável
+e durante as demais fases, ele é base tanto para a elaboração dos diagramas na
+fase de desenho do projeto, como na fase de construção onde o programador
+entenderá qual o comportamento deverá ser implementado e também na fase de
+testes, onde será possível validar se todas as funcionalidades solicitadas pelo
+cliente, foram disponibilizadas no sistema.</p>
+
+<p>Espero que as
+lições aprendidas na prática e documentadas neste artigo possam ajudar na
+elaboração de casos de uso mais eficazes, que possam ser facilmente
+compreendidos e que permitam aos desenvolvedores construir o produto certo na
+primeira vez, diminuindo o retrabalho e conduzindo a um aumento de
+produtividade e qualidade da equipe, e consequentemente a um projeto de
+sucesso.</p>
+
+<div class="artigo_nota1"><strong>Links e Referências</strong>
+
+<p><strong>UML Use Case Diagrams: Guidelines<br></strong><em><a href="http://msdn.microsoft.com/en-us/library/dd409432.aspx" target="_blank">http://msdn.microsoft.com/en-us/library/dd409432.aspx<strong></strong></a><strong></strong></em></p>
+
+<p align="left"><strong>Use Case Diagrams Tutorial<br></strong><em><a href="http://sparxsystems.com/resources/uml2_tutorial/uml2_usecasediagram.html" target="_blank">http://sparxsystems.com/resources/uml2_tutorial/uml2_usecasediagram.html<strong></strong></a><strong></strong></em></p>
+
+<p><strong>Especificação UML 2.0<br></strong><em><a href="http://www.omg.org/spec/UML/2.4.1/Superstructure/PDF">http://www.omg.org/spec/UML/2.4.1/Superstructure/PDF</a></em></p>
+
+<p>Gilleanes T.A. Guedes, <strong>UML 2 – Uma abordagem prática</strong>, Junho,
+2010.</p></div>
+
+					</div>	
+					<script src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {
+
+	$(document).on("click", "#show_grid", function(){
+
+		var idcurso = $(this).attr("data-idcurso")
+		var emandamento = $(this).attr("data-statuscurso")
+
+		$.ajax({
+            type: "POST",
+            data: { id: idcurso, andamento: emandamento},
+            url: "http://www.devmedia.com.br/articlesdev/grid_curso.asp",
+            dataType: "html",
+            success: function(result){
+                $("#grid_curso").html(result);
+            },
+            beforeSend: function(){
+            	$('#show_grid').css({display:"none"});
+                $('.load').css({display:"block"});
+            },
+            complete: function(msg){
+                $('.load').css({display:"none"});
+            }
+        });
+  	});
+});
+</script>
+
+<link rel="stylesheet" href="http://www.devmedia.com.br/articlesdev/css/flaticon.css"> 
+
+<style>
+#botao_listar_curso {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    font-family: Roboto,sans-serif;
+    font-size: 1.1em;
+    border-style: solid;
+    border-color: #fff !important;
+    border-width: 1px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    background-color: #444444;
+    color: #42b7b1 !important;
+    padding-left: 0 !important;
+}
+#botao_listar_curso p { 
+	text-align: center; 
+}
+#botao_listar_curso a {
+    color: #42b7b1 !important;
+}
+
+.link_pockets {	color: #595454 !important; }
+
+#botao_listar_curso .nav {
+    display: inline-block;
+  	margin: 0 -5px 0 0 !important;
+    width: 50%;
+    background-image: linear-gradient(to bottom, #49C5BF, #37A49F);
+    height: 35px;
+    padding-top: 10px;
+}
+#botao_listar_curso .nav a {
+    color: #FFF !important;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+#botao_listar_curso > .nav a:hover {
+    text-decoration: none !important;
+    opacity: 0.7;
+}
+.nav_prev {
+    text-align: left;
+}
+.nav_next {
+    text-align: right;
+    position: relative;
+    border-left: 1px solid #47C2BC;
+}
+.nav_next:first-child {    
+	left: 50%;
+	border: medium none;
+    margin-left: 0;
+    position: relative; 
+}
+#grid_curso {
+    margin-top: -5px !important;
+    width: 100% !important;
+}
+#grid_curso p {
+    color: #49C5BF;
+    cursor: pointer;
+    margin: 30px auto;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.bnt_ver_grade {
+    background-color: #49c5bf;
+    color: #ffffff;
+    padding: 8px 25px 10px;
+}
+.seta-bnt {
+    margin-left: -10px;
+}
+	
+.load { display: none; }
+.load > img { left: 49%; margin-bottom: 10px; position: relative; width: 25px; }
+
+#accordion { margin: 0 0 15px 15px!important; width: calc(100% - 30px); width: -webkit-calc(100% - 30px); }
+
+.containercurso { display: table; width: 100%; }
+
+.ui-accordion-header{
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+	color: #595454;
+	outline: none;
+	border-radius: 2px 2px 0px 0px;
+	font-size: 16px;
+	line-height: 40px;
+	margin: 0px;
+	cursor: pointer;
+}
+
+.ui-state-active {
+	border-bottom: 1px solid #fff;
+	background-color: #49C5BF;
+	color: #fff;
+	outline: none;
+	border-radius: 2px 2px 0px 0px;
+}
+
+.ui-state-hover {
+	border-bottom: 1px solid #fff;
+	background-color: #49C5BF;
+    color: #fff;
+}
+
+.ui-accordion-content .listcurso {
+	background-color: #49c5bf;
+	border-bottom: 1px solid #ddd;
+	color: #fff;
+	display: table-cell !important;
+	font-size: 16px !important;
+	font-weight: bold;
+	height: 100%;
+	margin-top: 0 !important;
+	padding: 10px 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 35px !important;
+}
+
+.ui-accordion-content > div:hover .listcurso {
+    background-color: #ff9900;
+	color: #fff !important;
+}
+
+.ui-accordion-content .desccurso {
+	border-bottom: 1px solid #ddd;
+	color: #dfdfdf !important;
+	cursor: pointer;
+    display: table-cell !important;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0 !important;
+    padding: 10px 0 10px 10px !important;
+    width: calc(100% - 15px) !important;
+}	
+
+.ui-accordion-content > div:hover .desccurso {
+	opacity:0.7;
+}
+
+.andamento { cursor: default !important; text-decoration: none !important; }
+
+@media screen and (max-width: 375px) {
+	#botao_listar_curso .nav { width: 100% !important; }
+	.nav_prev { text-align: center; margin-left: -25px; }
+	.nav_next { border: medium none; text-align: center; left: 0;}
+	.nav_next:first-child { border: medium none; left: 0; }
+}
+</style>
+
+
+					
+				</div>
+			
+				<footer>
+				<section id="box_autor_revista">
+
+	<a href="http://www.devmedia.com.br/autor/adriano-esposito/348843"><img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/image001-273.jpg" width="55px" border="0"></a>
+	
+	<br>
+		
+	<a href="http://www.devmedia.com.br/autor/adriano-esposito/348843" rel="author" class="nome_autor">Adriano Esposito</a><br>
+		
+	<p class="minibio_autor">Arquiteto Empresarial e de Soluções na Hewlett-Packard Company, com mais de 15 anos de experiência na área de TI. Bacharel em Ciência da Computação na PUC-SP, possui especialização em Gestão de TI pela FGV-SP. Certificado em Intel [...]</p>
+	
+		
+					<div>
+						<span style="font-size:0.6em;font-family:verdana;font-style: italic;">Publicado em 2013</span>
+					</div>
+		
+
+
+</section>					
+				</footer>
+				
+
+				<div id="separador_vert_60"></div>
+			
+				<a name="comentariosArtigo"></a>	
+				<section id="feedback_rodape"> 
+					
+					<div id="div_frase_feedback_rodape">
+					O que você achou deste post?
+					</div>
+					
+<div id="box_vota_rodape">
+	
+	
+	<div class="float_left">
+	<a class="linkfeedback" href="javascript:;" onclick="votaPost(29790,1);">
+	<img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/handUp.png" border="0">
+	</a>
+	</div>
+
+	<div class="float_left">
+	<a class="linkfeedback" href="javascript:;" onclick="votaPost(29790,1);">&nbsp;Gostei
+	(<span id="counterUp_rodape">10</span>)
+	</a>
+	</div>
+	
+
+	<div class="separador_feedback_rodape2"> 
+	<a class="linkfeedback" href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#link_voto_negativo" onclick="showBoxConfirmaVoto(0);">
+	<img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/handDown.png" border="0">
+	</a>
+	</div>
+	
+	<div class="float_left">
+	<a class="linkfeedback" href="http://www.devmedia.com.br/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao/29790#link_voto_negativo" onclick="showBoxConfirmaVoto(0);">
+	<span id="counterDown_rodape">&nbsp;(0)</span></a>
+	</div>
+	
+	
+	
+	<div class="t_clear_both"></div>
+</div>
+	
+					<div class="t_clear_both"></div>
+					
+				</section>
+							
+			<div id="box_artigo_canal">  
+
+	<div id="div_link_canal"><label style="margin-right:5px;font-size:1.3em; font-weight: 900;font-family:arial;">+</label>
+	
+	<a href="http://www.devmedia.com.br/engenharia-de-software" target="_blank" style="color:white;">
+	
+	
+	Mais conteúdo sobre Engenharia
+	</a> 
+	</div>
+	
+   
+</div>
+<style>
+	.mark-mvp {
+		display: inline-block;
+		background-color: #8CC53E;
+		margin-left: 7px;
+		padding: 0 5px;
+		height: 2em;
+		color: #fff;
+		font-weight: normal;
+		font-size: 10px;
+		line-height: 2.1em;
+		border-radius: 3px;
+		text-transform: uppercase;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.div_listagem
+	{
+	   word-wrap: normal !important;
+	}
+	.linkMyComments{text-decoration: none;color: #000;}
+	.linkMyComments:hover{text-decoration:underline;}
+	@media screen and (max-width: 480px){
+	.btn_postarDuvida{float: right;margin-top: -77px;font-family: arial;color: #fff;background-color: rgb(73, 197, 191);padding: 4px 9px 4px 9px;  border-radius: 3px;width: 25%;text-align: center;}
+	.link_postarDuvida:after{font-size:14px;content:"Postar dúvida Comentário" !important;text-align: center;}
+	}
+	.btn_postarDuvida{float: right;margin-top: -77px;font-family: arial;color: #fff;background-color: rgb(73, 197, 191);padding: 4px 9px 4px 9px;border-radius: 3px;}
+	.link_postarDuvida{color:#fff;text-decoration:none;}
+	.link_postarDuvida:after{content:"Postar dúvida / Comentário";}
+	
+	
+</style>
+<aside id="div_comentarios">
+
+<div id="comentarios" style="font-family: arial;border-top: 1px solid rgb(221, 221, 221);padding-top: 10px;color: rgb(151, 151, 151);font-size: 17px;">Não há comentários</div>
+<a href="http://www.devmedia.com.br/meus-comentarios/" style="display: block;margin-bottom: 35px;margin-top: 10px;font-family: Arial;font-size: 14px;color: rgb(21, 11, 197);text-decoration: none;">Meus comentarios</a><div class="btn_postarDuvida"><a class="link_postarDuvida" href="http://www.devmedia.com.br/rte3/addcomment.asp?idcomp=29790"></a></div>
+  
+</aside>
+
+
+	
+														
+									
+		</article>
+						
+					
+		
+		
+		<div id="div_publicidade">		
+		
+<span style="font-size:10px; font-family:Arial, Verdana; color:#999999;">Publicidade</span><br>
+<div style="position:relative; width:300px; height:250px; z-index:1; border:0px solid black;">
+	
+	<object style="position:relative; z-index:1;" width="300" height="250">
+		
+			<param name="movie" value="http://www.devmedia.com.br/imagens/banners/300x250-3.swf"> 
+		
+		
+		<param name="quality" value="high">
+		<param name="wmode" value="transparent">
+		
+			<embed wmode="transparent" style="position:relative; z-index:1;" src="http://www.devmedia.com.br/imagens/banners/300x250-3.swf" width="300" height="250">
+		
+	</object>
+</div>
+
+		<div style="margin-top:40px;margin-bottom:40px;"></div>
+
+		
+		</div>
+		
+		<div class="t_clear_both"></div>
+		
+	</div>
+
+<div class="t_clear_both"></div>
+
+
+
+<style>
+mark {
+	padding: 0 5px;
+	height: 20px;
+	margin-left: 7px;
+	background-color: #43B1AB;
+	color: #fff;
+	border-radius: 3px;
+	font-weight: normal;
+	display: inline-block;
+	font-size: 10px;
+	text-transform: uppercase;
+	top: -4px;
+	position: relative;
+	box-sizing: border-box;
+	line-height: 20px;
+}
+
+
+
+#botao-mais-canal {
+  width: 200px;
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #FFF;
+  background-color: #6c6;;
+  padding: 10px;
+  margin: -65px 0px 0px 230px;  
+}
+
+@media (max-width: 480px) {
+
+#botao-mais-canal {
+  width: 200px;
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #FFF;
+  background-color: #6c6;;
+  padding: 10px; 
+  margin: 0px 0px 0px 0px;   
+}
+
+}
+</style>
+
+<link href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/css" rel="stylesheet" type="text/css">
+<link href="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/artigo_style_2013(1).css" rel="stylesheet" type="text/css">
+
+<section id="section_relacionados">
+	<p class="titulo_relacionados">Mais posts</p> 
+	<div class="separador10px"></div>
+	<nav id="nav_relacionados">		
+		<ul class="ul_lista_relacionados"> 
+			<li class="lista_relacionados"><div id="tipo_post_relacionado">Revista</div><div id="box_titulo_post_relacionado"><a href="http://www.devmedia.com.br/revista-engenharia-de-software-magazine-77/32941" class="titulo_post_relacionado">Revista Engenharia de Software Magazine 77</a></div></li><li class="lista_relacionados"><div id="tipo_post_relacionado">Artigo</div><div id="box_titulo_post_relacionado"><a href="http://www.devmedia.com.br/automacao-de-testes-para-aplicacoes-moveis-em-android-parte-2/32924" class="titulo_post_relacionado">Automação de testes para aplicações móveis em Android  – Parte 2</a></div></li><li class="lista_relacionados"><div id="tipo_post_relacionado">Artigo</div><div id="box_titulo_post_relacionado"><a href="http://www.devmedia.com.br/apoio-ao-desenvolvimento-de-projetos-com-redmine-e-tortoise-svn/32923" class="titulo_post_relacionado">Apoio ao desenvolvimento de projetos com Redmine e Tortoise SVN</a></div></li><li class="lista_relacionados"><div id="tipo_post_relacionado">Artigo</div><div id="box_titulo_post_relacionado"><a href="http://www.devmedia.com.br/trabalhando-com-os-diagramas-da-uml-parte-1/32922" class="titulo_post_relacionado">Trabalhando com os diagramas da UML – Parte 1</a></div></li><li class="lista_relacionados"><div id="tipo_post_relacionado">Artigo</div><div id="box_titulo_post_relacionado"><a href="http://www.devmedia.com.br/principios-e-tecnicas-para-construcao-de-bons-modelos-conceituais/32921" class="titulo_post_relacionado">Princípios e técnicas para construção de bons modelos conceituais</a></div></li><li class="lista_relacionados"><div id="tipo_post_relacionado">Artigo</div><div id="box_titulo_post_relacionado"><a href="http://www.devmedia.com.br/gerenciamento-do-tempo-em-projetos-de-software-usando-pmbok/32920" class="titulo_post_relacionado">Gerenciamento do tempo em projetos de software usando PMBOK</a></div></li>
+		</ul>
+	</nav>
+	<div class="separador10px"></div>
+	<div id="div_listar_relacionados">
+		<div id="botao_listar_relacionados"> 
+			<center>
+			
+			
+			    
+				  <a href="http://www.devmedia.com.br/engenharia" class="link_listar_relacionados">Listar mais conteúdo</a>
+				
+								
+			</center>
+		
+		</div>
+
+
+		
+				
+	</div>	
+	
+	
+
+	
+</section>
+<section class="dm-limitfoot"></section>
+<footer class="footer-fixed">
+<section class="container-fluid dm-cor1 footer-box">
+<div class="container">
+<div class="row-fluid">
+<div class="span7 f-box-filho">
+<div class="row-fluid cx2">
+<img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/logo-footer.png" alt="DevMedia - asp.net, Java, Delphi, SQL e web Design, tudo em um só lugar!" title="DevMedia - asp.net, Java, Delphi, SQL e web Design, tudo em um só lugar!" width="145" height="32">
+<nav><a href="http://www.web-03.net/devmedia.asp" target="_blank">Anuncie</a> | <a href="http://www.devmedia.com.br/shop/">Loja</a> | <a href="http://www.devmedia.com.br/seja-um-autor-devmedia/28103">Publique</a> | <a href="http://www.devmedia.com.br/mvp/">Assine</a> | <a href="http://www.devmedia.com.br/fale-conosco/">Fale conosco</a></nav>
+</div>
+<ul class="social-bar">
+<li><a class="icon-1" href="http://www.facebook.com/pages/DevMedia/144522665592650" target="_blank"></a></li>
+<li><a class="icon-3" href="http://twitter.com/devmedia" target="_blank"></a></li>
+<li><a class="icon-4" href="https://plus.google.com/101753743720604160232?prsrc=3" target="_blank"></a></li>
+<li><a class="icon-2" href="http://www.devmedia.com.br/feed/"></a></li>
+</ul>
+</div>
+<div class="span5 cx3">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/PqAPbTuc2cR.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/PqAPbTuc2cR(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<div class="fb-shell">
+<!--<div class="fb-like-box" data-href="https://www.facebook.com/DevmediaWeb03" data-width="767" data-height="184" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>-->
+<div class="fb-like-box">
+<div id="fb-root"></div>
+<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/DevmediaWeb03" data-width="765" data-height="184" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=false&amp;app_id=145393072270566&amp;container_width=470&amp;height=184&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FDevmediaWeb03&amp;locale=pt_BR&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=false&amp;small_header=true&amp;width=765"><span style="vertical-align: bottom; width: 500px; height: 154px;"><iframe name="f4e1d3c98" width="765px" height="184px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/page.html" style="border: none; visibility: visible; width: 500px; height: 154px;" class=""></iframe></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="container-fluid dm-cor2 footer-box2">
+<div class="container">
+<div class="row-fluid">
+<div class="span4">Hospedagem web por <a href="http://www.porta80.com.br/" target="_blank">Porta 80 Web Hosting</a></div>
+
+</div>
+</div>
+</section>
+</footer></div>
+
+</section>
+
+<div id="menu-bar" style="position: fixed; width: 250px; transition: all 300ms ease; height: 100%; top: 0px; right: -250px; box-shadow: none;"><div id="fechar_aba" style="display: none;"><img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/close.png"></div>
+<div id="abrir_aba"><img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/open.png"></div>
+<div class="handle" style="left: 0px;"><img src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/logo_aba.png"></div>
+
+<script type="text/javascript">
+	var relatedUrl = document.domain;
+	var protocol = window.location.protocol;
+
+	var link = document.createElement("link");
+	with(link){
+		href = protocol+"//zeromov.com/wp-feed/ft/css/style.css";
+		type = "text/css";
+		rel = "stylesheet";
+	}	
+	document.getElementsByTagName("head")[0].appendChild(link);
+
+	var img_fecha = document.createElement("img");
+	with(img_fecha){
+		src = protocol+"//zeromov.com/wp-feed/ft/img/close.png";
+	}	
+	document.getElementById("fechar_aba").appendChild(img_fecha);
+	
+	var img_abre = document.createElement("img");
+	with (img_abre){
+		src = protocol+"//zeromov.com/wp-feed/ft/img/open.png";
+	}	
+	document.getElementById("abrir_aba").appendChild(img_abre);
+	
+	var img_logo = document.createElement("img");
+	with(img_logo){
+		src = protocol+"//zeromov.com/wp-feed/ft/img/logo_aba.png";
+	}	
+	document.getElementsByClassName("handle")[0].appendChild(img_logo);
+	
+	var idadv = document.createElement("iframe");
+	with(idadv){
+		id = "idadv";
+		src = protocol+"//zeromov.com/wp-feed/ft/top10.php?url="+relatedUrl;
+		scrolling = "no";
+	}	
+	document.getElementById("menu-bar").appendChild(idadv);
+</script>
+
+<script type="text/javascript">	
+	$("#menu-bar").slideReveal({
+	  trigger: $(".handle"),
+	  push: false,
+	  position: "right",
+	  width: 250,
+	  show: function(slider, trigger){
+	    $('#menu-bar').css({"-webkit-box-shadow":"-1px 1px 3px 0px rgba(50, 50, 50, 0.3)","box-shadow":"-1px 1px 3px 0px rgba(50, 50, 50, 0.3)"});
+	  },
+	  hidden: function(slider, trigger){
+	    $('#menu-bar').css({"-webkit-box-shadow":"none","box-shadow":"none"});
+	  },
+	});
+	function receiveMessage(event){
+		if(event.data == "1"){
+			$('#menu-bar').slideReveal("show");		
+			abreAba();
+		}
+	}
+	addEventListener("message", receiveMessage, false);	
+	function fechaAba(){
+		$('.handle').css( "left", "0px" );
+		$('#fechar_aba').hide();
+		$('#abrir_aba').show();
+		$('#menu-bar').slideReveal("hide");		
+	}
+	function abreAba(){
+		$('.handle').css( "left", "-48px" );
+		$('#abrir_aba').hide();
+		$('#fechar_aba').show();
+		$('#menu-bar').slideReveal("show");	
+	}
+	
+	$("#fechar_aba").click(function () {	
+		fechaAba();
+		chrome.storage.sync.set({fecha_aba: true});
+	});
+	$("#abrir_aba").click(function () {				
+		abreAba();
+		chrome.storage.sync.set({fecha_aba: false});
+	});
+	chrome.storage.sync.get('fecha_aba', function(response) {
+		if (response.fecha_aba != false){
+			fechaAba();
+			$('#abrir_aba').show();			
+		} else {
+			$('#abrir_aba').hide();
+		}
+	});
+	$(".handle").mouseover(function () {
+		$('#fechar_aba').css( "opacity", "0.4" );		
+	});
+	$(".handle").mouseout(function () {
+		$('#fechar_aba').css( "opacity", "0" );		
+	});
+	$("#fechar_aba").mouseover(function () {
+		$('#fechar_aba').css( "opacity", "1" );		
+	});
+	$("#fechar_aba").mouseout(function () {
+		$('#fechar_aba').css( "opacity", "0" );		
+	});	
+</script><iframe id="idadv" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/top10.html" scrolling="no"></iframe></div><iframe id="stSegmentFrame" name="stSegmentFrame" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/getSegment.html" frameborder="0" scrolling="no" width="0px" height="0px" style="display:none;"></iframe><div id="stwrapper" class="stwrapper stwrapper5x" style="display: none;"><iframe allowtransparency="true" id="stLframe" class="stLframe" name="stLframe" frameborder="0" scrolling="no" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/index.3c401b929c426b4aced880852aeb0d98.html"></iframe></div><div id="stOverlay" onclick="javascript:stWidget.closeWidget();"></div><div id="fb-root"></div><iframe name="oauth2relay708289412" id="oauth2relay708289412" src="./Diagrama de Casos de Uso_ Principais desafios na elaboração_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

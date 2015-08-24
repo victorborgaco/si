@@ -1,0 +1,1 @@
+(function(){stButtons.processCB({"google":168,"clicks_total":169,"twitter":2,"total":170,"shares":{"all":1,"twitter":1},"url":"http:\/\/www.devmedia.com.br\/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao\/29790","ourl":"http:\/\/www.devmedia.com.br\/diagrama-de-casos-de-uso-principais-desafios-na-elaboracao\/29790"})})();
